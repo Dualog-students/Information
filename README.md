@@ -5,6 +5,8 @@ This repository is just a short version of a long story regarding the tools and 
 
 * [Git](https://guides.github.com/)
 * [GitHub](https://guides.github.com/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Visual Studio AppCenter](https://docs.microsoft.com/en-us/appcenter/)
 * [Visual Studio 2017 Community Edition](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes) 
 
 **Technologies used:**
