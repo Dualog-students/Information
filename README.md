@@ -21,6 +21,14 @@ This repository is just a short version of a long story regarding the tools and 
 If you are familiar with some of the tools/technologies, that's great. If not, start skimming through the links under "general information".
 Second, consider installing Windows 10 on your machine as Dualog is heavily connected to the .NET and the surroundings of Microsoft ecosystem. Having a decent Mac with VS Code and VS 2017 installed will get you far, too.
 
+## Company guidelines
+Some standards that we (try) to follow within the Organization. This is to keep the development process somewhat streamlined.
+
+### Colors / Design
+Stuff on mimer, link to color palette?
+
+### Coding conventions
+Editorconfig, stylecop, visual studio settings
 
 ## Licensing
 TODO: Some poem about legal stuff
