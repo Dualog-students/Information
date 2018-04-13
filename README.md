@@ -12,7 +12,7 @@ This repository is just a short version of a long story regarding the tools and 
 **Technologies used:**
 
 * [C#](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/)
-* [.NET Ecosystem](https://stackify.com/net-ecosystem-demystified/) 
+* [.NET](https://stackify.com/net-ecosystem-demystified/) 
 * [Xamarin](https://docs.microsoft.com/en-us/xamarin/cross-platform/)
 * [Angular](https://angular.io/)
 
