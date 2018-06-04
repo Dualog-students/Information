@@ -54,6 +54,8 @@ Ref <###>
 6. Use the imperative mood ("Move cursor to..." not "Moves cursor to...").
 7. Use the message body to explain what and why vs. how.
 
+*Refer to an issue describing the bug when fixing bugs.*
+
 ### Branch naming
 
 *Info: Master and development branches will be protected, so you can't push directly to them*
@@ -91,7 +93,7 @@ git commit -m "Nice commit message that follows commit-message rules"
 If others have pushed changes to the `development` branch you can apply those changes to your branch by rebasing the branch into yours and solve any eventual conflicts locally. (`git checkout feature/awesome-new-feature && git rebase development`)
 
 #### When pushing changes
-If you have multiple commits and you are not pleased with their commit messages, now is a good time to stop and fix these things. Rebase your own branch by `git rebase -i HEAD^n` going `n` commits back and you'll be able to edit, squash or fixup your commits before pushing.
+If you have multiple commits and you are not pleased with their commit messages, now is a good time to stop and fix these things. Rebase your own branch by `git rebase -i HEAD^n` going `n` commits back and you'll be able to edit, squash or fixup your commits before pushing. If only the last commit message is unsatisfactory you can just use `git commit --amend`.
 Push your changes to GitHub by 
 ```shell
 git push -u origin feature/awesome-new-feature
@@ -106,4 +108,4 @@ git push -u -d origin feature/awesome-new-feature
 ```
 
 ## Licensing
-All the repositories made in the "Dualog-Students" organization starts as open-source and licensed project by project. Dualog can at any time decide to take an open-source project and close it from the public to either hide company secrets or for protecting customers. See https://choosealicense.com/ for open-source licensing examples.
+All the repositories made in the "Dualog-Students" organization starts as open-source and licensed project by project. Dualog can at any time decide to take an open-source project and close it from the public to either hide company secrets or for protecting customers. See [https://choosealicense.com/](https://choosealicense.com/) for open-source licensing examples.
