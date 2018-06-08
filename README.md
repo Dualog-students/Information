@@ -10,7 +10,8 @@ This repository contains an overview of the tools and the technologies we are us
 
 **Tools used:**
 
-* [Slack (irc/chat)](http://dualog.slack.com/)
+* [Aha! (product roadmap)](https://dualog.aha.io)
+* [Slack (irc/chat)](https://dualog.slack.com/)
 * [Git (version control)](https://guides.github.com/introduction/git-handbook/)
 * [GitHub (code reviews)](https://guides.github.com/introduction/flow/)
 * [Visual Studio Code (editor)](https://code.visualstudio.com/)
@@ -23,15 +24,12 @@ If you are familiar with some of the tools/technologies, that's great. If not, s
 Second, consider installing Windows 10 on your machine as Dualog is heavily connected to the .NET / Microsoft ecosystem. Having a decent Mac with VS Code and VS 2017 for Mac installed will get you far, too.
 
 ## Company guidelines
-Some standards that we (try) to follow within the Organization. This is to keep the development process somewhat streamlined.
-
-### Colors / Design
-Stuff on mimer, link to color palette?
+Some standards that we follow within the Organization, this is to keep the development process somewhat streamlined.
 
 ### Coding conventions
-Coding conventions create a consistent look to the code, so that readers can focus on content, not layout. They enable readers to understand the code more quickly by making assumptions based on previous experience. They also facilitate copying, changing, and maintaining the code.
+Coding conventions create a consistent look to the code, so that readers can focus on content, not layout. They enable readers to understand the code quicker by making assumptions based on previous experience. They also facilitate copying, changing, and maintaining the code.
 
-To achieve this we are using an EditorConfig inside each project. [EditorConfig](https://editorconfig.org) helps developers define and maintain consistent coding styles between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles. EditorConfig files are easily readable and they work nicely with version control systems.
+To achieve this we are using an EditorConfig inside each project. [EditorConfig](https://editorconfig.org) helps developers define and maintain consistent coding styles between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles. EditorConfig files are readable and they work nicely with version control systems.
 
 [See this link for .NET coding convention settings examples for editorconfigs.](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference)
 
@@ -51,14 +49,14 @@ Ref <###>
 3. Message Body should end with at least one issue tracking reference.
 4. Use valid MarkDown in the message body.
 5. Use the present tense ("Add feature" not "Added feature").
-6. Use the imperative mood ("Move cursor to..." not "Moves cursor to...").
+6. Use the **imperative** mood ("Move cursor to..." not "Moves cursor to...").
 7. Use the message body to explain what and why vs. how.
 
 *Refer to an issue describing the bug when fixing bugs.*
 
 ### Branch naming
 
-*Info: Master and development branches will be protected, so you can't push directly to them*
+*Info: Master and development branches are always protected, so you can't push directly to them*
 
 | Naming                            | When to use?                   |
 | ----------------------------------| ------------------------------ |
@@ -72,7 +70,10 @@ Ref <###>
 | `cosmetic/awesome-branch-name`    | When improving UI/Cosmetic     |
 | `testing/awesomest-branch-name`   | When adding tests              |
 
-### Development workflow
+### Development (GitHub) workflow
+
+See [GitHub workflow](https://guides.github.com/introduction/flow/) for further explanation.
+
 #### Starting
 When creating a new feature, you should branch off from `development` and create your own branch.
 E.g.
@@ -93,16 +94,16 @@ git commit -m "Nice commit message that follows commit-message rules"
 If others have pushed changes to the `development` branch you can apply those changes to your branch by rebasing the branch into yours and solve any eventual conflicts locally. (`git checkout feature/awesome-new-feature && git rebase development`)
 
 #### When pushing changes
-If you have multiple commits and you are not pleased with their commit messages, now is a good time to stop and fix these things. Rebase your own branch by `git rebase -i HEAD^n` going `n` commits back and you'll be able to edit, squash or fixup your commits before pushing. If only the last commit message is unsatisfactory you can just use `git commit --amend`.
+If you have commits and you are not pleased with their commit messages, now is a good time to stop and fix them. Rebase your own branch by `git rebase -i HEAD^n` going `n` commits back and you'll be able to edit, squash or fixup your commits before pushing. If the last commit message is unsatisfactory you can use `git commit --amend`.
 Push your changes to GitHub by 
 ```shell
 git push -u origin feature/awesome-new-feature
 ```
-or simply `git push` if you're already tracking a remote branch.
+or do `git push` if you're already tracking a remote branch.
 
 You can now create a pull request on GitHub from your branch into `development`.
 
-Once the branch has been merged into `development` you can delete your local branch by `git branch -D feature/awesome-new-feature`. Make sure to delete the remote branch after it has been merged. This can be done through the browser on GitHub or by using
+Once the branch has been merged into `development` you can delete your local branch by `git branch -D feature/awesome-new-feature`. Make sure to delete the remote branch after it has been merged. This is done through the browser on GitHub or by using
 ```shell
 git push -u -d origin feature/awesome-new-feature
 ```
