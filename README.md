@@ -56,6 +56,8 @@ Ref <###>
 
 ### Branch naming
 
+*Remember: Since we are using [Waffle.io](https://waffle.io) you should always append "#isseNumber" to the branch name, this automatically moves your issue in the kanban board.*
+
 *Info: Master and development branches are always protected, so you can't push directly to them*
 
 | Naming                            | When to use?                   |
